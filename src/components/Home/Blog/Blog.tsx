@@ -7,7 +7,7 @@ import { BsHandIndexThumb } from 'react-icons/bs';
 
 const Blog = () => {
   return (
-    <div className="pt-16 pb-16">
+    <div id="blogs" className="pt-16 pb-16">
       <h1
         className="text-center text-4xl xl:text-5xl font-bold text-white"
         data-aos="fade-right"

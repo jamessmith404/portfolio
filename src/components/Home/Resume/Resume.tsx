@@ -5,17 +5,22 @@ import { Education, Experiences } from '@/constant/constant';
 
 const Resume = () => {
   return (
-    <div className="pt-20 pb-16">
+    <div id="experiences" className="pt-20 pb-16">
       <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols1 xl:grid-cols-2 gap-10">
         {/* Work Section */}
         <div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-white">
+          <h1
+            className="text-3xl sm:text-4xl font-bold text-white"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+          >
             <span className="text-cyan-200">Industry</span> Experience
           </h1>
           <div
             className="mt-10"
             data-aos="zoom-in"
             data-aos-anchor-placement="top-center"
+            data-aos-delay="300"
           >
             {Experiences.map((props, index) => (
               <ResumeCard
@@ -31,14 +36,18 @@ const Resume = () => {
         </div>
         {/* Education Section */}
         <div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-white">
+          <h1
+            className="text-3xl sm:text-4xl font-bold text-white"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+          >
             <span className="text-cyan-200">Academic</span> Experience
           </h1>
           <div
             className="mt-10"
             data-aos="zoom-in"
             data-aos-anchor-placement="top-center"
-            data-aos-delay="300"
+            data-aos-delay="600"
           >
             {Education.map((props, index) => (
               <ResumeCard

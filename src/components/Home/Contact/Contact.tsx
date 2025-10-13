@@ -10,48 +10,42 @@ import {
   FaTwitter,
 } from 'react-icons/fa';
 import { FaX, FaXTwitter } from 'react-icons/fa6';
-import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
-    <div className="pt-16 pb-16 ">
+    <div id="contact" className="pt-16 pb-16 ">
       <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Text content */}
-        <div className="">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200">
+        <div className="lg:col-span-2">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200 text-center">
             Let&apos;s connect!
           </h1>
-          <p className="text-gray-400 mt-6 text-base sm:text-lg">
-            Reach out and let&apos;s turn your vision to solution.
+          <p className="text-gray-400 mt-6 text-base sm:text-lg text-center">
+            Reach out and turn your vision to solution.
           </p>
           {/* Info */}
-          <div className="mt-7">
-            <div
-              className="flex items-center space-x-3 mb-4"
-              data-aos="fade-right"
-              data-aos-delay="0"
-              data-aos-anchor-placement="top-center"
-            >
+          <div
+            className="mt-7"
+            data-aos="fade-right"
+            data-aos-delay="0"
+            data-aos-anchor-placement="top-center"
+          >
+            <div className="flex items-center space-x-3 mb-4 justify-center">
               <BiEnvelope className="w-9 h-9 text-cyan-300" />
-              <p className="text-xl font-bold text-gray-400">
+              <p className="text-md md:text-xl font-bold text-gray-400">
                 jamesmithwigglesworth@gmail.com
               </p>
             </div>
-            <div
-              className="flex items-center space-x-3 mb-4"
-              data-aos="fade-right"
-              data-aos-delay="200"
-              data-aos-anchor-placement="top-center"
-            >
+            <div className="flex items-center space-x-3 mb-4 justify-center">
               <BiMap className="w-9 h-9 text-cyan-300" />
-              <p className="text-xl font-bold text-gray-400">
+              <p className="text-md md:text-xl font-bold text-gray-400">
                 Jakarta, Indonesia
               </p>
             </div>
           </div>
           {/* Social icons */}
           <div
-            className="flex items-center mt-8 space-x-3"
+            className="flex items-center mt-8 space-x-3 justify-center"
             data-aos="fade-up"
             data-aos-delay="400"
             // data-aos-anchor-placement="top-center"
@@ -69,7 +63,7 @@ const Contact = () => {
               className="w-14 h-14 bg-blue-950/60 rounded-full flex items-center justify-center cursor-pointer flex-col hover:bg-blue-800 transition-all duration-300"
               data-aos="fade-up"
               data-aos-delay="600"
-            //   data-aos-anchor-placement="top-center"
+              //   data-aos-anchor-placement="top-center"
             >
               <Link
                 href="https://x.com/jemeinibro"
@@ -83,7 +77,7 @@ const Contact = () => {
               className="w-14 h-14 bg-blue-950/60 rounded-full flex items-center justify-center cursor-pointer flex-col hover:bg-blue-800 transition-all duration-300"
               data-aos="fade-up"
               data-aos-delay="800"
-            //   data-aos-anchor-placement="top-center"
+              //   data-aos-anchor-placement="top-center"
             >
               <Link
                 href="https://github.com/jamessmith404"
@@ -97,7 +91,7 @@ const Contact = () => {
               className="w-14 h-14 bg-blue-950/60 rounded-full flex items-center justify-center cursor-pointer flex-col hover:bg-blue-800 transition-all duration-300"
               data-aos="fade-up"
               data-aos-delay="1000"
-            //   data-aos-anchor-placement="top-center"
+              //   data-aos-anchor-placement="top-center"
             >
               <Link
                 href="https://www.linkedin.com/in/james-smith-wigglesworth/"
@@ -109,8 +103,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        {/* Form Section */}
-        <ContactForm />
       </div>
     </div>
   );

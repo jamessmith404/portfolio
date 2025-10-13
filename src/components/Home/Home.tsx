@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import Hero from './Hero/Hero';
 import Resume from './Resume/Resume';
+import Project from './Project/Project';
 import Blog from './Blog/Blog';
 import Contact from './Contact/Contact';
 
@@ -26,9 +27,10 @@ const Home = () => {
     initAOS();
   });
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-[#0d0d1f]">
       <Hero />
       <Resume />
+      <Project />
       <Blog />
       <Contact />
     </div>
