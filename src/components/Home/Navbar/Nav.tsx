@@ -52,7 +52,7 @@ const Nav = ({ openNav }: Props) => {
         </div>
 
         {/* Right side: Buttons */}
-        <div className="flex items-center space-x-4">
+        {/* <div className="flex items-center space-x-4">
           <button className="px-6 py-3 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2">
             <BiDownload className="w-5 h-5" />
             <span>Download CV</span>
@@ -61,7 +61,7 @@ const Nav = ({ openNav }: Props) => {
             onClick={openNav}
             className="w-8 h-8 cursor-pointer text-white lg:hidden"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
