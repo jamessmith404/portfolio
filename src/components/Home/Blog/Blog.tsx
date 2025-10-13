@@ -18,13 +18,13 @@ const Blog = () => {
       </h1>
 
       {/* grid: 1 column mobile, 2 on md, 3 on xl; top-align items */}
-      <div className="w-[70%] mt-10 mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 items-start">
+      <div className="w-[70%] mt-16 mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 items-start">
         {Blogs &&
           Blogs.map((blog, index) => (
             <div
               key={index}
               data-aos="fade-right"
-              data-aos-delay={(index + 1) * 300}
+              data-aos-delay={((index) % 3) * 300}
               data-aos-anchor-placement="top-center"
             >
               <BlogCard

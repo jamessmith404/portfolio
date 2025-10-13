@@ -5,7 +5,12 @@ import ProjectCard from './ProjectCard';
 const Project = () => {
   return (
     <div id="projects" className="pt-16 pb-16">
-      <h1 className="text-center text-3xl md:text-4xl xl:text-5xl font-bold text-white">
+      <h1
+        className="text-center text-3xl md:text-4xl xl:text-5xl font-bold text-white"
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-anchor-placement="top-center"
+      >
         A small selection of <br /> recent{' '}
         <span className="text-cyan-300">projects</span>
       </h1>

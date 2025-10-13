@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { FaGithub, FaGoogleDrive, FaInfoCircle } from 'react-icons/fa';
-import { TbWorldWww } from 'react-icons/tb';
+import { FaGithub, FaGoogleDrive, FaInfoCircle, FaYoutube } from 'react-icons/fa';
 
 interface Props {
   id: string;
@@ -30,8 +29,8 @@ const ProjectCard = ({
   return (
     <div
       className="rounded-lg overflow-hidden shadow-lg bg-[#1a1a2e] group"
-      data-aos="fade-up"
-      data-aos-delay={200 * cardIndex}
+      data-aos="flip-left"
+      data-aos-delay={200 * (cardIndex % 3)}
       data-aos-anchor-placement="top-center"
     >
       <div className="overflow-hidden h-[250px]">
@@ -77,7 +76,7 @@ const ProjectCard = ({
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-white hover:text-cyan-300 transition-colors"
             >
-              <TbWorldWww size={20} />
+              <FaYoutube size={20} />
               <span>Demo</span>
             </a>
           )}

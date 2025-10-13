@@ -8,6 +8,8 @@ import React from 'react';
 import { FaArrowLeft, FaGithub, FaGoogleDrive } from 'react-icons/fa';
 import { TbWorldWww } from 'react-icons/tb';
 
+import ReactMarkdown from 'react-markdown';
+
 const ProjectDetailsPage = () => {
   const { id } = useParams();
   const project = Projects.find((p) => p.id.toString() === id);
@@ -20,7 +22,8 @@ const ProjectDetailsPage = () => {
     );
   }
 
-  const { title, imageUrl, tags, content, githubUrl, demoUrl, resourceUrl } = project;
+  const { title, imageUrl, tags, content, githubUrl, demoUrl, resourceUrl } =
+    project;
 
   return (
     <div className="p-8 pt-[14vh] min-h-screen bg-[#0d0d1f] text-white">
@@ -51,12 +54,8 @@ const ProjectDetailsPage = () => {
           ))}
         </div>
         {content && (
-          <div className="text-lg text-white/80 mb-8 text-justify">
-            {content.split('\n\n').map((paragraph, index) => (
-              <p key={index} className="mb-4">
-                {paragraph}
-              </p>
-            ))}
+          <div className="prose prose-invert text-lg text-white/80 mb-8 text-justify">
+            <ReactMarkdown>{content}</ReactMarkdown>
           </div>
         )}
         <div className="flex items-center gap-6">

@@ -47,7 +47,7 @@ const Resume = () => {
             className="mt-10"
             data-aos="zoom-in"
             data-aos-anchor-placement="top-center"
-            data-aos-delay="600"
+            data-aos-delay="500"
           >
             {Education.map((props, index) => (
               <ResumeCard
