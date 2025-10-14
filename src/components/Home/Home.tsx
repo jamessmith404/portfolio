@@ -9,9 +9,6 @@ import Contact from './Contact/Contact';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// import Portfolio from './Portfolio/Portfolio'
-// import Services from './Services/Services'
-
 const Home = () => {
   useEffect(() => {
     const initAOS = async () => {
