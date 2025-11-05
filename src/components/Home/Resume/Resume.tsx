@@ -1,6 +1,5 @@
 import React from 'react';
 import ResumeCard from './ResumeCard';
-import { FaCodepen } from 'react-icons/fa';
 import { Education, Experiences } from '@/constant/constant';
 
 const Resume = () => {
@@ -24,7 +23,19 @@ const Resume = () => {
           >
             {Experiences.map((props, index) => (
               <ResumeCard
-                Icon={props.Icon}
+                Icon={(iconProps) => (
+                  <div
+                    style={{
+                      width: 48,
+                      height: 48,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <props.Icon size={40} {...iconProps} />
+                  </div>
+                )}
                 role={props.role}
                 date={props.date}
                 description={props.description}
@@ -51,7 +62,19 @@ const Resume = () => {
           >
             {Education.map((props, index) => (
               <ResumeCard
-                Icon={props.Icon}
+                Icon={(iconProps) => (
+                  <div
+                    style={{
+                      width: 48,
+                      height: 48,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <props.Icon size={40} {...iconProps} />
+                  </div>
+                )}
                 role={props.role}
                 date={props.date}
                 description={props.description}

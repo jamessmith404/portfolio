@@ -1,3 +1,8 @@
+import BangkitIcon from '@/components/Icons/BangkitIcon';
+import ELifeIcon from '@/components/Icons/ELifeIcon';
+import MeetingAiIcon from '@/components/Icons/MeetingAiIcon';
+import MoladinIcon from '@/components/Icons/MoladinIcon';
+import UIIcon from '@/components/Icons/UIIcon';
 import { FaCodepen } from 'react-icons/fa';
 
 export const NavLinks = [
@@ -30,10 +35,18 @@ export const NavLinks = [
 
 export const Experiences = [
   {
+    role: 'AI Engineer',
+    company: 'eLife Inc. (Tokyo, Japan)',
+    date: 'October 2025 - Present',
+    Icon: ELifeIcon,
+    description:
+      'Excited to Contribute!',
+  },
+  {
     role: 'AI Engineer Intern',
     company: 'Meeting.ai (Jakarta, Indonesia)',
     date: 'February 2025 - June 2025',
-    Icon: FaCodepen,
+    Icon: MeetingAiIcon,
     description:
       'AI Feature Prototyping, Integrating, and Benchmarking Suite Development',
   },
@@ -41,7 +54,7 @@ export const Experiences = [
     role: 'Software Engineer Intern',
     company: 'Moladin (Jakarta, Indonesia)',
     date: 'February 2024 - July 2024',
-    Icon: FaCodepen,
+    Icon: MoladinIcon,
     description:
       'Vehicle Management System Development, Automated Test Maintenance',
   },
@@ -52,7 +65,7 @@ export const Education = [
     role: 'B.Sc. in Computer Science',
     company: 'Universitas Indonesia (Depok, Indonesia)',
     date: '2021 - 2025',
-    Icon: FaCodepen,
+    Icon: UIIcon,
     description:
       'Undergrad life: all-nighter, caffeinated, long debugging sesh, skipping some lectures, and whatnot',
   },
@@ -60,7 +73,7 @@ export const Education = [
     role: 'Machine Learning Cohort (Capstone)',
     company: 'Bangkit Academy (Remote)',
     date: 'February 2024 - June 2024',
-    Icon: FaCodepen,
+    Icon: BangkitIcon,
     description:
       'Real-time Translation App Development, ML Curriculum Completion',
   },
@@ -68,7 +81,7 @@ export const Education = [
     role: 'Research Assistant',
     company: 'Universitas Indonesia (Depok, Indonesia)',
     date: 'January 2024 - June 2024',
-    Icon: FaCodepen,
+    Icon: UIIcon,
     description:
       'Full-Stack Development for Ontology Curriculum Research, from PRD to Deployment',
   },
