@@ -3,7 +3,6 @@ import ELifeIcon from '@/components/Icons/ELifeIcon';
 import MeetingAiIcon from '@/components/Icons/MeetingAiIcon';
 import MoladinIcon from '@/components/Icons/MoladinIcon';
 import UIIcon from '@/components/Icons/UIIcon';
-import { FaCodepen } from 'react-icons/fa';
 
 export const NavLinks = [
   {
