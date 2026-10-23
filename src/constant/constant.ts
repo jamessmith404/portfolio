@@ -104,7 +104,7 @@ export const Blogs = [
   {
     image: '/images/docker-logo.svg',
     title: `Apps with Shipping Containers: A Beginner's Guide to Taking Your App from Idea to Awesome`,
-    link: 'https://jamessmith404.bearblog.dev/building-eventable-teamwork-tracking-and-code-like-a-superhero/',
+    link: 'https://jamessmith404.bearblog.dev/building-apps-with-shipping-containers-a-beginners-guide-to-taking-your-app-from-idea-to-awesome/',
     date: '28 May, 2024',
     tags: ['Docker', 'CI/CD', 'Workflow'],
   },
