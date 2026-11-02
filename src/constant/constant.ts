@@ -39,7 +39,7 @@ export const Experiences = [
     date: 'October 2025 - Present',
     Icon: ELifeIcon,
     description:
-      'Excited to Contribute!',
+      'OCR and AI Auto-Validation Pipeline Development, LLM Evaluation and Token Cost Optimization',
   },
   {
     role: 'AI Engineer Intern',
